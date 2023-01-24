@@ -31,7 +31,7 @@ public class TestHighSchoolStudentLogic {
 	}
 
 	@Test
-	public void testYears3TilGraduation() {
+	public void test3YearsTilGraduation() {
 		//students with 4 credits or less should have 3 more years to graduate
 		student.setCredits(4);
 		assertEquals(3, hsSL.calculateYearsToGradutate(student));
@@ -43,5 +43,4 @@ public class TestHighSchoolStudentLogic {
 				student.setCredits(12);
 				assertEquals(1, hsSL.calculateYearsToGradutate(student));
 	}
-
 }
